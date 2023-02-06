@@ -65,6 +65,7 @@ button:hover{
   background-color: rgba(0, 183, 255, 0.911);
   cursor: pointer;
 }
+
 a{
   text-decoration: none;
   font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;

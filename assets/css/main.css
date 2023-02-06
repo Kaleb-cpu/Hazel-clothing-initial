@@ -79,5 +79,50 @@ header{
 
 /* header and navigation end */
 
-/* home main */
 
+/* footer */
+
+footer{
+  background-color: darkcyan;
+  margin: 0;
+}
+
+.footer-nav{
+  margin: 0;
+  list-style: none;
+  padding: 1em;
+  width: max-content;
+  height: max-content;
+}
+nav{
+  width: max-content;
+}
+.footer-nav a{
+  color: black;
+  padding: 0.5em;
+  display: inline-block;
+
+}
+.copy-right{
+  display: flex;
+  justify-content: space-evenly;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: clamp(0.5rem, 2vw, 1rem); 
+  
+} 
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3em;
+  gap: 1em;
+}
+
+.nav-media{
+  display: flex;
+  justify-content: space-between;
+}
+.social-media i {
+  font-size: 3rem;
+}
