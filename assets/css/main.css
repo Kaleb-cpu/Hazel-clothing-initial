@@ -53,6 +53,7 @@ header{
   font-size: clamp(1.5rem, 3vw, 4rem); 
   text-decoration: none;
   color: hsl(170, 30%, 80%);
+  
 }
 
 .main-nav{
@@ -84,7 +85,6 @@ header{
   gap: 2rem;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
-
   padding: 0.5rem 2rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -115,7 +115,7 @@ header{
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-
+  
 }
 
 /* cta cards */
@@ -129,4 +129,19 @@ h3{
 .media-element h3, p{
   text-decoration: none;
   color: black;
+}
+
+button{
+  display: flex;
+  justify-content: flex-end;
+  
+  font-size: clamp(1rem, 1.9vw, 3rem); 
+  background-color: aqua;
+  /* background: none; */
+  border: none;
+  b
+}
+
+button:hover{
+  background-color: orange
 }
