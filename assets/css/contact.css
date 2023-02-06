@@ -3,11 +3,11 @@
   
 }
 main{
+  
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 h1, h3, p{
   text-align: center;
-
   color: hsl(36, 69%, 30%);
   
 }
@@ -52,9 +52,9 @@ button{
   border: none;
   border-radius: 5px;
   color: hsl(170, 30%, 80%);
- }
- button:hover{
+}
+button:hover{
   background-color: rgb(21, 25, 26);
   color: rgba(235, 235, 235, 0.733);
   cursor: pointer;
- }
+}

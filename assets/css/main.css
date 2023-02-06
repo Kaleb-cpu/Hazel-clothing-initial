@@ -19,6 +19,7 @@ main{
   font-family: 'Carter One', Franklin Gothic Medium , Arial Narrow, sans-serif ;
   
  }
+ 
 
  h1 {
   margin: 0;
@@ -48,11 +49,13 @@ header{
   margin-left: 0.8em;
   mix-blend-mode: hard-light;
 }
-
+a{
+  text-decoration: none;
+}
 .logo .site-title {
   font-family: 'Modern Antiqua', Verdana, Geneva, Tahoma, cursive, sans-serif;
   font-size: clamp(1.5rem, 3.5vw, 4rem); 
-  text-decoration: none;
+  
   color: hsl(170, 30%, 80%);
   
 }
@@ -69,7 +72,7 @@ header{
   display: block;
   padding: 1em;
   
-  text-decoration: none;
+  
   color: hsl(170, 20%, 90%);
 }
 
