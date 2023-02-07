@@ -37,7 +37,10 @@ header{
   background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(126,126,126,1) 100%);
   
 }
-
+a{
+  text-decoration: none;
+  font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
+}
 .logo{
   display: flex;
   align-items: center;
@@ -63,6 +66,17 @@ header{
   
   color: hsl(170, 30%, 80%);
   
+}
+.social-media a:hover{
+  color: whitesmoke;
+}
+.social-media a{
+  color: black;
+}
+
+.footer-nav a:hover{
+  color: whitesmoke;
+
 }
 
 .main-nav{
@@ -121,13 +135,18 @@ nav{
   font-size: clamp(0.5rem, 2vw, 1rem); 
   
 } 
+.copy-right a{
+  color: black;
+}
 .social-media{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 3em;
   gap: 1em;
+  
 }
+
 
 .nav-media{
   display: flex;
