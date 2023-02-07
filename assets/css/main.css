@@ -46,14 +46,17 @@ header{
 }
 
 .logo img{
-  width: 4rem;
+  max-width: 4rem;
   margin-right: 0.5em;
   margin-left: 0.8em;
   mix-blend-mode: hard-light;
 }
-a{
+.main-nav a{
+  
   text-decoration: none;
+  font-size: clamp(0.6rem, 2vw, 4rem); 
 }
+
 .logo .site-title {
   font-family: 'Modern Antiqua', Verdana, Geneva, Tahoma, cursive, sans-serif;
   font-size: clamp(1.5rem, 3.5vw, 4rem); 
@@ -64,7 +67,6 @@ a{
 
 .main-nav{
   display: flex;
-  
   list-style: none;
   font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.5rem); 
@@ -96,21 +98,24 @@ footer{
   margin: 0;
   list-style: none;
   padding: 1em;
-  width: max-content;
+  max-width: max-content;
   height: max-content;
 }
 nav{
-  width: max-content;
+  max-width: max-content;
 }
 .footer-nav a{
   color: black;
   padding: 0.5em;
   display: inline-block;
+  text-decoration: none;
 
 }
 .copy-right{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-right: 3rem;
   
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: clamp(0.5rem, 2vw, 1rem); 
@@ -129,5 +134,21 @@ nav{
   justify-content: space-between;
 }
 .social-media i {
-  font-size: 3rem;
+  font-size: clamp(1.3rem, 2.5vw, 2rem); 
+}
+
+@media only screen and (max-width: 60em) {
+  .copy-right {
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
+
+  }
+  .nav-media{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 }

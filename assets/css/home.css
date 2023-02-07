@@ -3,11 +3,13 @@
   gap: 2rem;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
+  
   padding: 0.5rem 2rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   
+  /* grid-template-columns: repeat(auto-fill, minmax(60em, 1fr)); */
 }
 
 .gallery > * {
@@ -15,17 +17,25 @@
 }
 
 .media-group {
+  
   display: grid;
   grid-auto-flow: column;
-  gap: 1.5rem;
-  
+  gap: 1rem;
+}
+
+
+h1{
+  font-size: clamp(2.5rem, 10vw, 3.5rem); 
+  line-height: 1.2em;
 }
 
 .media-element{
   display: grid;
-  grid-template-rows: min-content;
+  /* grid-template-columns: max-content; */
+  
   gap: 0.2rem;
-
+  
+  
   
   padding: 1em;
   margin: 0;
@@ -37,6 +47,7 @@
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  display: inline-block;
   
 }
 
@@ -51,6 +62,7 @@ h3{
 .media-element h3, p{
   text-decoration: none;
   color: black;
+  
 }
 
 button{
@@ -72,4 +84,24 @@ button:hover{
 a{
   text-decoration: none;
   font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
+}
+
+@media only screen and (max-width: 60em) {
+  
+  
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    scroll-padding-inline: 0.5rem 0.5rem;
+    
+  }
+  
+  .media-element{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+    scroll-snap-align: start;
+    
+  }
+  
 }
