@@ -48,11 +48,13 @@ section .rows{
 .card{
   flex: 1;
   margin: 2rem 1.5rem;
-  box-shadow: 0px 0px 7px 0px darkred;
-  
-
 }
 
+/* border box only on images */
+.card:nth-child(-n+3){
+  box-shadow: 0px 0px 7px 0px darkred;
+
+}
 /* inside card title 2 */
 .title h2{
   font-size: clamp(1.5rem, 2.5vw, 4rem); 
@@ -86,7 +88,7 @@ section .rows{
 /* hover on image cards only */
 .card iframe{
   width: 100%;
-  
+  border: none;
 }
 
 @media only screen and (max-width: 60em){
