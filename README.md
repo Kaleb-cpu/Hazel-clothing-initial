@@ -1,4 +1,6 @@
 # Course: CPNT 260 - Web Page Construction Fundamentals
+
+## Final Project
 ## Author name: Kaleb Berhane
 ### Attributions: 
   - https://cssgradient.io/
