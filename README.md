@@ -9,7 +9,8 @@
   - [Image-Freepik](https://saclab.com/luxury-bag-101-how-to-choose-your-first-high-end-handbag/)
   
   #### GH Pages Site
-  - [GH Pages site]()
+  - [GH Pages site](https://kaleb-cpu.github.io/cpnt260-final-project/)
 
+**Terms and Conditions added footer link works**
 
 
