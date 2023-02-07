@@ -2,14 +2,14 @@
   height: 100vh;
   
 }
+
+
 main{
   
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 h1, h3, p{
-  text-align: center;
-  color: hsl(36, 69%, 30%);
-  
+  text-align: center; 
 }
 
 form{
