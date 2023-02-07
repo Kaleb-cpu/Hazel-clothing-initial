@@ -5,107 +5,91 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   box-sizing: border-box;
-  
-
  }
 
- /* main header */
-main{
+ /* header and navigation start */
+ header{
+   display: flex;
+   justify-content: space-between;
+   
+   /* color */
+   background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(126,126,126,1) 100%); 
+  }
   
+
   
-  background: linear-gradient(90deg, rgba(57,171,139,1) 0%, rgba(73,77,76,1) 30%, rgba(172,163,163,1) 63%, rgba(222,255,226,1) 100%);
+  h1 {
+   margin: 0;
+   padding: 0.8em;
+
+   /* fonts */
+   font-family: 'Carter One', Franklin Gothic Medium , Arial Narrow, sans-serif ;
+  }
   
-}
- h1{
+  /* anchor tag and logo */
+  a{
+   text-decoration: none;
+   font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
+  }
+  .logo{
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+   /* font size and color for logo */
+   font-size: 1.5rem;
+   font-family: 'Modern Antiqua', Verdana, Geneva, Tahoma, cursive, sans-serif;
+   font-size: clamp(1.5rem, 3.5vw, 4rem); 
+   color: hsl(170, 30%, 80%);
+  }
   
-  font-family: 'Carter One', Franklin Gothic Medium , Arial Narrow, sans-serif ;
+  /* logo image */
+  .logo img{
+    max-width: 4rem;
+    margin-right: 0.5em;
+    margin-left: 0.8em;
+    mix-blend-mode: hard-light;
+  }
   
+  /* main nav bar */
+  .main-nav{
+    display: flex;
+    list-style: none;
+ 
+    /* nav bar fonts */
+    font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
+  }
+
+
+ /* nav bar anchor tag */
+ .main-nav a{
+   display: block;
+   padding: 1em;
+   
+   /* color and fonts */
+   text-decoration: none;
+   font-size: clamp(0.6rem, 2vw, 4rem); 
+   color: hsl(170, 20%, 90%);
  }
  
-
- h1 {
-  margin: 0;
-  padding: 0.8em;
+ /* nav bar hover state */
+ .main-nav a:hover {
+   text-transform: uppercase;
  }
 
-/* header and navigation start */
-header{
-  display: flex;
-  justify-content: space-between;
-  
-  
-  background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(126,126,126,1) 100%);
-  
-}
-a{
-  text-decoration: none;
-  font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
-}
-.logo{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
+ /* header and navigation end */
+
+ /* background image */
+main{
+  background: linear-gradient(90deg, rgba(57,171,139,1) 0%, rgba(73,77,76,1) 30%, rgba(172,163,163,1) 63%, rgba(222,255,226,1) 100%);
 }
 
-.logo img{
-  max-width: 4rem;
-  margin-right: 0.5em;
-  margin-left: 0.8em;
-  mix-blend-mode: hard-light;
-}
-.main-nav a{
-  
-  text-decoration: none;
-  font-size: clamp(0.6rem, 2vw, 4rem); 
-}
-
-.logo .site-title {
-  font-family: 'Modern Antiqua', Verdana, Geneva, Tahoma, cursive, sans-serif;
-  font-size: clamp(1.5rem, 3.5vw, 4rem); 
-  
-  color: hsl(170, 30%, 80%);
-  
-}
-.social-media a:hover{
-  color: whitesmoke;
-}
-.social-media a{
-  color: black;
-}
-
-.footer-nav a:hover{
-  color: whitesmoke;
-
-}
-
-.main-nav{
-  display: flex;
-  list-style: none;
-  font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
-  font-size: clamp(1rem, 2.5vw, 1.5rem); 
-}
-
-.main-nav a{
-  display: block;
-  padding: 1em;
-  
-  
-  color: hsl(170, 20%, 90%);
-}
-
-.main-nav a:hover {
-  text-transform: uppercase;
-}
-
-/* header and navigation end */
 
 
-/* footer */
-
+/* footer start */
 footer{
   background-color: darkcyan;
-  
 }
 
 .footer-nav{
@@ -115,16 +99,22 @@ footer{
   max-width: max-content;
   height: max-content;
 }
-nav{
-  max-width: max-content;
+
+/* nav parent */
+.nav-media{
+  display: flex;
+  justify-content: space-between;
 }
+
+/* nav anchor */
 .footer-nav a{
   color: black;
   padding: 0.5em;
   display: inline-block;
   text-decoration: none;
-
 }
+
+/* terms and conditions */
 .copy-right{
   display: flex;
   justify-content: flex-end;
@@ -135,9 +125,13 @@ nav{
   font-size: clamp(0.5rem, 2vw, 1rem); 
   
 } 
+
+/* terms and conditions on hover */
 .copy-right a{
   color: black;
 }
+
+/* social media icons */
 .social-media{
   display: flex;
   justify-content: center;
@@ -148,14 +142,21 @@ nav{
 }
 
 
-.nav-media{
-  display: flex;
-  justify-content: space-between;
-}
-.social-media i {
-  font-size: clamp(1.3rem, 2.5vw, 2rem); 
+/* hover state for social media */
+.social-media a:hover{
+  color: whitesmoke;
 }
 
+/* social media anchor tag */
+.social-media a{
+  color: black;
+}
+
+/* navigation hover state */
+.footer-nav a:hover{
+  color: whitesmoke;
+
+}
 @media only screen and (max-width: 60em) {
   .copy-right {
     

@@ -25,7 +25,7 @@ section{
   font-size: clamp(1rem, 1.5vw, 2.5rem); 
   font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
   
-  /* color */
+  
 }
 
 .text h1{
@@ -33,7 +33,7 @@ section{
 }
 
 
-
+/* responsiveness on mobile*/
 @media only screen and (max-width: 60em){
   
   img{

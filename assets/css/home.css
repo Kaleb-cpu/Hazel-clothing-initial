@@ -1,69 +1,71 @@
+/* main gallery page */
 .gallery{
   display: grid;
   gap: 2rem;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
-  
   padding: 0.5rem 2rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   
-  /* grid-template-columns: repeat(auto-fill, minmax(60em, 1fr)); */
 }
 
+/* gallery direct children */
 .gallery > * {
   scroll-snap-align: end;
 }
 
+/* each media group with 3 children */
 .media-group {
-  
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
 }
 
-
-h1{
-  font-size: clamp(2.5rem, 10vw, 3.5rem); 
-  line-height: 1.2em;
-}
-
+/* media group child */
 .media-element{
   display: grid;
-  
-  
   gap: 0.2rem;
-  
-  
-  
   padding: 1em;
   margin: 0;
   border-radius: 15px;
   background-color: rgba(126,126,126,1);
   
 }
+
+/* images within media-element */
 .media-element > img{
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  display: inline-block;
-  
+  display: inline-block; 
 }
+
+/* hover state for media element */
+.media-element:hover {
+  background-color: #1b6b70;
+}
+
+/* media element select  */
+
+/* media element direct select */
+.media-element h3, p{
+  text-decoration: none;
+  color: black;
+}
+/* title for h1 */
+h1{
+  font-size: clamp(2.5rem, 10vw, 3.5rem); 
+  line-height: 1.2em;
+}
+
 
 /* cta cards */
 h3{
   color: hsl(170, 30%, 80%);
 }
 
-.media-element:hover {
-  background-color: #1b6b70;
-}
-.media-element h3, p{
-  text-decoration: none;
-  color: black;
-  
-}
 
 button{
   display: flex;
@@ -71,7 +73,6 @@ button{
   
   font-size: clamp(1rem, 1.9vw, 3rem); 
   background-color: aqua;
-  /* background: none; */
   border: none;
   border-radius: 5px;
 }
@@ -81,11 +82,10 @@ button:hover{
   cursor: pointer;
 }
 
-a{
-  text-decoration: none;
-  font-family: 'Lato', Franklin Gothic Medium, Arial Narrow, sans-serif;
-}
+/* anchor tag */
 
+
+/* responsive on mobile */
 @media only screen and (max-width: 60em) {
   
   
