@@ -10,7 +10,7 @@
  /* main header */
 main{
   
-  background: rgb(2,0,36);
+  
   background: linear-gradient(90deg, rgba(57,171,139,1) 0%, rgba(73,77,76,1) 30%, rgba(172,163,163,1) 63%, rgba(222,255,226,1) 100%);
   
 }
